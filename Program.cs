@@ -4,41 +4,39 @@ using System.Threading;
 
 namespace FileApplication {
     class Program {
-        private string userData = null;
-        private static void print() {
+        private static string userData { get; set; }
+        private static void SetData() {
             // Read and show each line from the file
             string line = "";
             using (StreamReader sr = new StreamReader("data.txt")) {
                 while ((line = sr.ReadLine()) != null) {
-                    Console.WriteLine(line);
+                    Program.userData = line;
                 }
             }
         }
-        private static void FetchData() {
+        private static void Set() {
             var startTimeSpan = TimeSpan.Zero;
-            var periodTimeSpan = TimeSpan.FromSeconds(2);
+            var periodTimeSpan = TimeSpan.FromSeconds(1);
 
             var timer = new Timer((e) =>
-                { Program.print(); }, null, startTimeSpan, periodTimeSpan);
+                { Program.SetData(); }, null, startTimeSpan, periodTimeSpan);
+        }
+        private static void DisplayData() {
+            // Displaying the 'userData' onto console
+            Console.WriteLine(Program.userData);
+        }
+        private static void Display() {
+            var startTimeSpan = TimeSpan.Zero;
+            var periodTimeSpan = TimeSpan.FromSeconds(3);
+
+            var timer = new Timer((e) =>
+                { Program.DisplayData(); }, null, startTimeSpan, periodTimeSpan);
         }
         static void Main(string[] args) {
-            ///ThreadStart childref = new ThreadStart(timerFunc);
-            Program.FetchData();
 
-            // ThreadStart fetchData = new ThreadStart(//fetch data function);
-            // ThreadStart displayData = new ThreadStart(//display data function);
+            Program.Set();
+            Program.Display();
 
-            ///Thread childThread = new Thread(childref);
-
-            // Thread fetchThread = new Thread(fetchData);
-            // Thread displayThread = new Thread(displayData);
-            
-            /// childThread.Start();
-
-            // fetchThread.Start();
-            //displayThread.Start();
-
-            // Thread.Sleep(15 * 1000);
             Console.ReadKey();
         }
     }
