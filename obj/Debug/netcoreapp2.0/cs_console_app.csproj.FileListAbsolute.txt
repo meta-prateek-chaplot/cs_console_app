@@ -9,3 +9,14 @@ C:\Users\Prateek\Documents\Visual Studio Code\C#\cs_console_app\obj\Debug\netcor
 C:\Users\Prateek\Documents\Visual Studio Code\C#\cs_console_app\obj\Debug\netcoreapp2.0\cs_console_app.AssemblyInfo.cs
 C:\Users\Prateek\Documents\Visual Studio Code\C#\cs_console_app\obj\Debug\netcoreapp2.0\cs_console_app.dll
 C:\Users\Prateek\Documents\Visual Studio Code\C#\cs_console_app\obj\Debug\netcoreapp2.0\cs_console_app.pdb
+D:\cs_console_app\bin\Debug\netcoreapp2.0\cs_console_app.deps.json
+D:\cs_console_app\bin\Debug\netcoreapp2.0\cs_console_app.runtimeconfig.json
+D:\cs_console_app\bin\Debug\netcoreapp2.0\cs_console_app.runtimeconfig.dev.json
+D:\cs_console_app\bin\Debug\netcoreapp2.0\cs_console_app.dll
+D:\cs_console_app\bin\Debug\netcoreapp2.0\cs_console_app.pdb
+D:\cs_console_app\obj\Debug\netcoreapp2.0\cs_console_app.csprojResolveAssemblyReference.cache
+D:\cs_console_app\obj\Debug\netcoreapp2.0\cs_console_app.csproj.CoreCompileInputs.cache
+D:\cs_console_app\obj\Debug\netcoreapp2.0\cs_console_app.AssemblyInfoInputs.cache
+D:\cs_console_app\obj\Debug\netcoreapp2.0\cs_console_app.AssemblyInfo.cs
+D:\cs_console_app\obj\Debug\netcoreapp2.0\cs_console_app.dll
+D:\cs_console_app\obj\Debug\netcoreapp2.0\cs_console_app.pdb

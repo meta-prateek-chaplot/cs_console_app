@@ -664,30 +664,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Prateek\\.nuget\\packages\\": {},
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Prateek\\Documents\\Visual Studio Code\\C#\\cs_console_app\\cs_console_app.csproj",
+      "projectUniqueName": "D:\\cs_console_app\\cs_console_app.csproj",
       "projectName": "cs_console_app",
-      "projectPath": "C:\\Users\\Prateek\\Documents\\Visual Studio Code\\C#\\cs_console_app\\cs_console_app.csproj",
-      "packagesPath": "C:\\Users\\Prateek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Prateek\\Documents\\Visual Studio Code\\C#\\cs_console_app\\obj\\",
+      "projectPath": "D:\\cs_console_app\\cs_console_app.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "D:\\cs_console_app\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Prateek\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
