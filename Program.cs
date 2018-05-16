@@ -5,12 +5,17 @@ using System.Threading;
 namespace FileApplication {
     class Program {
         private static string userData { get; set; }
+        private static Object readLock = new Object();
+        private static Object writeLock = new Object();
         private static void SetData() {
             // Read and show each line from the file
             string line = "";
-            using (StreamReader sr = new StreamReader("data.txt")) {
-                while ((line = sr.ReadLine()) != null) {
-                    Program.userData = line;
+
+            lock(Program.readLock) {
+                using (StreamReader sr = new StreamReader("data.txt")) {
+                    while ((line = sr.ReadLine()) != null) {
+                        Program.userData = line;
+                    }
                 }
             }
         }
@@ -23,7 +28,9 @@ namespace FileApplication {
         }
         private static void DisplayData() {
             // Displaying the 'userData' onto console
-            Console.WriteLine(Program.userData);
+            lock(Program.writeLock) {
+                Console.WriteLine(Program.userData);
+            }
         }
         private static void Display() {
             var startTimeSpan = TimeSpan.Zero;
